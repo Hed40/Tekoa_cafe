@@ -27,7 +27,7 @@ class Category
     }
 
     public function __tostring(){
-        return $this->getName(); //affiche les propriétés dans le l'onglet "select Catégory" en string
+        return $this->getName(); //affiche les propriétés dans l'onglet "select Catégory" en string
     }
 
     public function getId(): ?int

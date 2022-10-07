@@ -49,11 +49,6 @@ class ProductsRepository extends ServiceEntityRepository
 
     }
 
-
-
-
-
-
     public function add(Products $entity, bool $flush = false): void
     {
         $this->getEntityManager()->persist($entity);

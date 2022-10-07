@@ -4,15 +4,13 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
-class HomeController extends AbstractController
+class AccountAddressController extends AbstractController
 {
-    #[Route('/', name: 'home')]
+    #[Route('/compte/adresses', name: 'app_account_address')]
     public function index(): Response
     {
-
-        return $this->render('home/index.html.twig');
+        return $this->render('account/address.html.twig');
     }
 }

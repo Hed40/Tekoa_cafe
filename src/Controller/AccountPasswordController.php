@@ -30,6 +30,7 @@ class AccountPasswordController extends AbstractController
 
         $form->handleRequest($request);
 
+
         if ($form->isSubmitted() && $form->isValid()) {
 
             //Methode permettant de comparer le mot de passe utilisateur au mot de passe BD.
